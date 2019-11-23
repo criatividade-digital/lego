@@ -64,6 +64,8 @@ b{ font-weight: 600; }
 
 img{ width: 100%; }
 
+.icon-list { width: 35px; margin-left: 15px; margin-right: 5px; margin-top: 15px; }
+
 li{ list-style: none; display: inline-block; }
 
 span{ display: inline-block; }

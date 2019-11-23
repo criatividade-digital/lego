@@ -1179,7 +1179,7 @@ BRIGL.Builder.prototype = {
 
     // Loads a model from the part server and return the Mesh
     loadModelByName: function(partName, options, callback, errorCallback) {
-        BRIGL.log("Creating " + partName + "...");
+        BRIGL.log("Criando " + partName + "...");
         this.errorCallback = errorCallback;
         if (!options) options = {};
         var partSpec = this.getPart(partName);
@@ -1193,7 +1193,7 @@ BRIGL.Builder.prototype = {
                 errorCallback("Error in partToMesh " + e);
                 return;
             }
-            BRIGL.log("Clique para rotacionar o modelo.");
+            BRIGL.log("Clique na imagem para rotacionar o modelo.");
             callback(mesh);
 
         }).bind(this));
