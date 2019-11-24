@@ -80,6 +80,15 @@
 	.education-wrapper:after,
 	.education-wrapper .education:after{ display: none; }
 
+	.step {
+		line-height: 1.6em;
+		width: 1.6em; 
+		top:0px;
+		left: 0px;
+		position: relative;
+	  }
+
+
 }
 
 /* Screens Resolution : 575px

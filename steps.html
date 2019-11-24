@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Passo a passo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            background-color: #ccccff;
+            margin: 0px;
+            font-family: Monospace;
+            font-weight: bold;
+        }
+
+        #container {
+            background-color: #ffffff;
+            border: 1px solid black;
+            width: 800px;
+            height: 600px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+
+        #stepbox {
+            position: absolute;
+            bottom: 0;
+            right: 0
+        }
+    </style>
+</head>
+
+<script src="js/three.min.js"></script>
+<script src="js/prototype.js"></script>
+<script src="js/Detector.js"></script>
+<script src="js/brigl_materials.js"></script>
+<script src="js/brigl.js"></script>
+<script src="js/ctrlsteps.js"></script>
+<script src="steps.js"></script>
+<script src="common-js/querystring.js"></script>
+
+<script>
+    var p = getQueryString("passo");
+    if (typeof p === "string")
+      passoInicial = parseInt(p, 10); 
+
+    function CopyToClipboard() {
+        var el = document.createElement('textarea');
+        el.value = "steps.push({" +
+            "meshRotationX: " + cont.mesh.rotation.x + ", " +
+            "meshRotationY: " + cont.mesh.rotation.y + ", " +
+            "meshRotationZ: " + cont.mesh.rotation.z + ", " +
+            "meshPositionX: " + cont.mesh.position.x + ", " +
+            "meshPositionY: " + cont.mesh.position.y + ", " +
+            "meshPositionZ: " + cont.mesh.position.z + ", " +
+            "cameraPositionX: " + cont.camera.position.x + ", " +
+            "cameraPositionY: " + cont.camera.position.y + ", " +
+            "cameraPositionZ: " + cont.camera.position.z + "});";
+        el.setAttribute('readonly', '');
+        el.style.position = 'absolute';
+        el.style.left = '-9999px';
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        alert("Copiado.");
+    }
+</script>
+    
+
+<body onload="init();">
+    <p id="logarea">Inicializando...</p>
+    <div id="container" style="visibility: hidden;">
+        <div id="stepbox">
+            <input type="button" onclick="dostep(-1);" value="<" />
+            <input type="button" onclick="doAnimatedStep(-1);" value="a" />
+            <span id="x">?/?</span>
+            <input type="button" onclick="doAnimatedStep(1);" value="a" />
+            <input type="button" onclick="dostep(1);" value=">" />
+            <input type="button" id="copy" onclick="CopyToClipboard()" value="C" style="visibility: hidden">
+        </div>
+    </div>
+</body>
+
+<script>
+    if (getQueryString("copy"))
+        document.getElementById("copy").style.visibility = "visible";
+</script>
+</html>
