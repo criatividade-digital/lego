@@ -5,6 +5,8 @@
     <title>Passo a passo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="common-css/bootstrap.css">
+
     <style>
         body {
             background-color: #ccccff;
@@ -28,6 +30,10 @@
             bottom: 0;
             right: 0
         }
+        .barra-botoes {
+            position: absolute;
+            bottom: 10px;
+        }
     </style>
 </head>
 
@@ -37,7 +43,7 @@
 <script src="js/brigl_materials.js"></script>
 <script src="js/brigl.js"></script>
 <script src="js/ctrlsteps.js"></script>
-<script src="steps.js"></script>
+<script src="steps/steps.js"></script>
 <script src="common-js/querystring.js"></script>
 
 <script>
@@ -66,23 +72,32 @@
         document.body.removeChild(el);
         alert("Copiado.");
     }
+
 </script>
     
 
 <body onload="init();">
     <p id="logarea">Inicializando...</p>
-    <div id="container" style="visibility: hidden;">
+    <div id="stepsImage" style="position: relative; width:900px; height:700px; background-image:url('steps/Page 2.png');">
+        <div id="container" 
+            style="visibility: hidden; 
+            float: right;
+            top: 10px; left: -10px;
+            width:400px; height:400px;
+            border-style: dotted;
+            position: relative;">
+        </div>
+        <div id="stepbox" class="barra-botoes">
+            <button type="button" class="btn-primary" onclick="dostep(-1);">&nbsp;<&nbsp;</button>
+            <button type="button" class="btn-primary" onclick="doAnimatedStep(-1);">&nbsp;a&nbsp;</button>
+            <span id="x">?/?</span>
+            <button type="button" class="btn-primary" onclick="doAnimatedStep(1);">&nbsp;a&nbsp;</button>
+            <button type="button" class="btn-primary" onclick="dostep(1);">&nbsp;>&nbsp;</button>
+            <button type="button" class="btn-primary" id="copy" onclick="CopyToClipboard()" style="visibility: hidden">C</button>
+        </div>
     </div>
-    <div id="stepbox">
-        <input type="button" onclick="dostep(-1);" value="<" />
-        <input type="button" onclick="doAnimatedStep(-1);" value="a" />
-        <span id="x">?/?</span>
-        <input type="button" onclick="doAnimatedStep(1);" value="a" />
-        <input type="button" onclick="dostep(1);" value=">" />
-        <input type="button" id="copy" onclick="CopyToClipboard()" value="C" style="visibility: hidden">
-    </div>
-
 </body>
+<script src="common-js/bootstrap.js"></script>
 
 <script>
     if (getQueryString("copy"))

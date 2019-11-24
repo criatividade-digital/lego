@@ -25,7 +25,7 @@
         builder = new BRIGL.Builder("parts/");
 
         // load a model..
-        builder.loadModelByName("criatividade01.ldr", {}, function (mesh) {
+        builder.loadModelByName("criatividade0001.ldr", {}, function (mesh) {
             offset = mesh.brigl.offset;
 
             totStep = mesh.brigl.part.numSteps;
@@ -132,7 +132,7 @@
         step += d;
         if (step < 1) step = 1;
         if (step > totStep) step = totStep;
-        builder.loadModelByName("criatividade01.ldr", { stepLimit: step, /*centerOffset:offset,*/ drawLines: true, blackLines: true }, function (mesh) {
+        builder.loadModelByName("criatividade0001.ldr", { stepLimit: step, /*centerOffset:offset,*/ drawLines: true, blackLines: true }, function (mesh) {
             updateStepDisplay();
             cont.setModel(mesh, false);
             if (typeof steps[step-1] === "object") {
@@ -150,6 +150,8 @@
                 //cont.camera.position.z (para o caso de ter alterado o zoom)
             }
             cont.render();
+            document.getElementById("stepsImage").style.backgroundImage = "url('steps/page " + (step+1) + ".png')"; 
+            
 
         });
     }
