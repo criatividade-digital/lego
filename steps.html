@@ -72,15 +72,16 @@
 <body onload="init();">
     <p id="logarea">Inicializando...</p>
     <div id="container" style="visibility: hidden;">
-        <div id="stepbox">
-            <input type="button" onclick="dostep(-1);" value="<" />
-            <input type="button" onclick="doAnimatedStep(-1);" value="a" />
-            <span id="x">?/?</span>
-            <input type="button" onclick="doAnimatedStep(1);" value="a" />
-            <input type="button" onclick="dostep(1);" value=">" />
-            <input type="button" id="copy" onclick="CopyToClipboard()" value="C" style="visibility: hidden">
-        </div>
     </div>
+    <div id="stepbox">
+        <input type="button" onclick="dostep(-1);" value="<" />
+        <input type="button" onclick="doAnimatedStep(-1);" value="a" />
+        <span id="x">?/?</span>
+        <input type="button" onclick="doAnimatedStep(1);" value="a" />
+        <input type="button" onclick="dostep(1);" value=">" />
+        <input type="button" id="copy" onclick="CopyToClipboard()" value="C" style="visibility: hidden">
+    </div>
+
 </body>
 
 <script>
