@@ -897,7 +897,7 @@ BRIGL.PartSpec.prototype = {
 	    //       parts and most of the model is in sub parts.
 	    //
 	    if (typeof stepLimit != 'undefined'){
-		BRIGL.log("Generating geometry " + i + "/" + this.lines.length);
+		BRIGL.log("Gerando a geometria do modelo " + i + "/" + this.lines.length);
 	    }
 	    
             var spec = this.lines[i];
@@ -1184,7 +1184,7 @@ BRIGL.Builder.prototype = {
         if (!options) options = {};
         var partSpec = this.getPart(partName);
         partSpec.whenReady((function() {
-            BRIGL.log("Generating geometry");
+            BRIGL.log("Gerando a geometria");
             var meshFiller = new BRIGL.MeshFiller();
             var mesh;
             try {
@@ -1366,7 +1366,7 @@ BRIGL.Builder.prototype = {
             this.partCache[partName] = p;
 
             // the part is not being downloaded, we'll start it!
-            BRIGL.log("Loading " + partName);
+            BRIGL.log("Carregando " + partName);
             this.asyncReq(partName, (function(txt) {
                 // when async return, parse part
                 this.parsePart(p, txt);
