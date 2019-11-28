@@ -22,7 +22,7 @@
         BRIGL.log = function (msg) { document.getElementById("logarea").innerText = msg; };
 
         // create the builder object to obtain the models
-        builder = new BRIGL.Builder("parts/");
+        builder = new BRIGL.Builder("/parts/");
 
         // load a model..
         builder.loadModelByName("criatividade0001.ldr", {}, function (mesh) {
