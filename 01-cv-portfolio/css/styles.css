@@ -83,7 +83,11 @@ b.max-bold{ font-weight: 700; }
 }
 
 .b-eventos { border-style: solid; border-radius: 7px; border-width: 2px;	border-color: rgb(202,179,59);	
-	background-color: rgb(245,196,0); color: white; padding-left: 3px; padding-right: 3px;
+	background-color: rgb(245,196,0); color:  white; padding-left: 3px; padding-right: 3px;
+}
+
+.b-controle { border-style: solid; border-radius: 7px; border-width: 2px;	border-color: rgb(208,152,35);	
+	background-color: rgb(255,181,21); color: white; padding-left: 3px; padding-right: 3px;
 }
 
 /* ---------------------------------

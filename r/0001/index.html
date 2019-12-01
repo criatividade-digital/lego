@@ -206,7 +206,6 @@
 										src="../../images/lego icon - pq.jpg"> Passo a <b>passo 3D</b>: Ideal para uso
 									online.</a>
 							</p>
-
 						</div><!-- education -->
 
 						<div class="education margin-b-50">
@@ -253,9 +252,9 @@
 							<div class="alert alert-success" role="alert">
 								⚡
 								<ul class="list margin-b-30">
-									<li>Arrastando e organizando os blocos de programação.</li>
-									<li>Configurando o bloco <spam class="b-movimento">definir motores de movimento para
-											(B+A)</spam>.</li>
+									<li><a href="/dicas/0006.html" target="_blank">Arrastando e organizando os blocos de programação.</a></li>
+									<li><a href="/dicas/0005.html" target="_blank">Configurando o bloco <spam class="b-movimento">definir motores de movimento para
+											(B+A)</spam>.</a></li>
 								</ul>
 							</div>
 						</div>
@@ -276,10 +275,10 @@
 							<div class="alert alert-success" role="alert">
 								⚡
 								<ul class="list margin-b-30">
-									<li>Transferindo o programa para o HUB usando o cabo USB.</li>
-									<li>Transferindo o programa para o HUB usando a conexão Bluetooth.</li>
-									<li>Iniciando e parando o programa no HUB.</li>
-									<li>Desligando o HUB.</li>
+									<li><a href="/dicas/0001.html" target="_blank">Transferindo o programa para o HUB usando o cabo USB.</a></li>
+									<li><a href="/dicas/0002.html" target="_blank">Transferindo o programa para o HUB usando a conexão Bluetooth.</a></li>
+									<li><a href="/dicas/0003.html" target="_blank">Iniciando e parando o programa no HUB.</a></li>
+									<li><a href="/dicas/0004.html" target="_blank">Desligando o HUB.</a></li>
 								</ul>
 							</div>
 							<div class="alert alert-warning" role="alert">
@@ -291,7 +290,7 @@
 								para <b>A+B</b>.
 								Veja como fazer isso no link:
 								<ul class="list margin-b-30">
-									<li>Ajustando a direção do motor (para frente/ para trás).</li>
+									<li><a href="/dicas/0005.html" target="_blank">Ajustando a direção do motor (para frente/ para trás).</a></li>
 								</ul>
 							</div>
 						</div><!-- education -->
@@ -322,13 +321,18 @@
 
 						<div class="education margin-b-50">
 							<h4><b><span class="step">2</span> PROGRAMAR</b></h4>
-							<h5 class="font-yellow"><b>Virando à direita e à esquerda</b></h5>
+							<h5 class="font-yellow"><b>Zigue-zague</b></h5>
 							<h6 class="font-lite-black margin-t-10">Linguagem de blocos no SPIKE app.</h6>
-							<p class="margin-tb-30">Para onde ele vai? 🤔 Precisamos controlar a direção do nosso
-								veículo.
-								Para isso, temos os blocos de programação <spam class="b-movimento">...</spam>
-								Veja na imagem <b>abaixo</b> o conjunto de blocos para controlar esta movimentação.</p>
-							<img class="blocos-programa" src="programa/andar para frente.png" alt="">
+							<p class="margin-tb-30">Para onde o carrinho vai? 🤔 <br />
+								Precisamos controlar a direção do nosso veículo! 
+								Para isso, temos o bloco de programação <spam class="b-movimento">mover com direção</spam>.
+								Este bloco permite fazer com que os dois motores elétricos, de forma controlada, girem em velocidades
+								diferentes fazendo o carrinho virar para à esquerda ou para à direita!</p>
+							<img class="blocos-programa" src="programa/zigue-zague.png" alt="">
+							<p class="margin-tb-30">Usamos também o bloco <spam class="b-controle">repete</spam> para
+								os movimentos à esquerda e à direita se repetirem fazendo o carrinho andar em zigue-zague!</p>
+							<p class="margin-tb-30">Veja a relação dos blocos de programação com a a movimentação do carrinho</p>
+							<img class="blocos-programa" src="programa/diagrama programa.png" alt="">
 							<p class="margin-tb-30">Os blocos acima você econtra nos grupos EVENTOS e MOVIMENTO.</p>
 							<b>EVENTOS</b>
 							<ul class="list margin-b-30">
@@ -342,12 +346,21 @@
 									<spam class="b-movimento">definir motores de movimento para (B+A)</spam>
 								</li>
 								<li>
-									<spam class="b-movimento">definir velocidade de movimento para (20) %</spam>
+									<spam class="b-movimento">definir velocidade de movimento para (30) %</spam>
 								</li>
 								<li>
-									<spam class="b-movimento">mover Para [a frente] por (20) [cm]</spam>
+									<spam class="b-movimento">mover Para [a frente] por (10) [cm]</spam>
+								</li>
+								<li>
+									<spam class="b-movimento">mover com direção (direita (60)) por (10) [cm]</spam>
 								</li>
 							</ul>
+							<b>CONTROLE</b>
+							<ul class="list margin-b-30 ">
+								<li>
+									<spam class="b-controle">repete (3) vezes</spam>
+								</li>
+
 						</div>
 
 						<div class="education margin-b-50">
@@ -384,19 +397,6 @@
 								</ul>
 							</div>
 						</div><!-- education -->
-
-						<div class="education margin-b-50">
-							<h4><b><span class="step">2</span> EXPLORAR</b></h4>
-							<h5 class="font-yellow"><b>Agora é com você!!! 👊</b></h5>
-							<p class="margin-tb-30">Que tal experimentar programar diferentes movimentos?
-								Se estiver sem ideias, listamos algumas possibilidades:
-							</p>
-							<ul class="list margin-b-30">
-								<li>Carrinho anda para frente e para trás.</li>
-								<li>Vai e volta.</li>
-								<li>Movimenta para frente e depois estaciona.</li>
-							</ul>
-						</div>
 					</div><!-- education -->
 				</div><!-- education-wrapper -->
 			</div><!-- col-sm-8 -->
@@ -408,8 +408,8 @@
 		<p class="copyright">
 			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 			Copyright &copy;
-			<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
-			<i class="ion-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+			<script>document.write(new Date().getFullYear());</script> All rights reserved | This page was built based on
+			a <a href="https://colorlib.com" target="_blank">Colorlib</a> template. <i class="ion-heart" aria-hidden="true"></i>
 			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 		</p>
 
