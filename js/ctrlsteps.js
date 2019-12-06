@@ -24,8 +24,9 @@
         // create the builder object to obtain the models
         builder = new BRIGL.Builder("/parts/");
 
-        // load a model..
-        builder.loadModelByName("criatividade0001.ldr", {}, function (mesh) {
+        // load a model... modeloAtual() tem que estar definido no arquivo principal que carrega os passos.
+        
+        builder.loadModelByName(modeloAtual(), {}, function (mesh) {
             offset = mesh.brigl.offset;
 
             totStep = mesh.brigl.part.numSteps;
@@ -132,7 +133,8 @@
         step += d;
         if (step < 1) step = 1;
         if (step > totStep) step = totStep;
-        builder.loadModelByName("criatividade0001.ldr", { stepLimit: step, /*centerOffset:offset,*/ drawLines: true, blackLines: true }, function (mesh) {
+        //modeloAtual() tem que estar definido no arquivo que carrega os passos 
+        builder.loadModelByName(modeloAtual(), { stepLimit: step, /*centerOffset:offset,*/ drawLines: true, blackLines: true }, function (mesh) {
             updateStepDisplay();
             cont.setModel(mesh, false);
             if (typeof steps[step-1] === "object") {
