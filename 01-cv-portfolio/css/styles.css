@@ -94,6 +94,11 @@ b.max-bold{ font-weight: 700; }
 	background-color: #00b94d; color: white; padding-left: 3px; padding-right: 3px;
 }
 
+.b-sensor { border-style: solid; border-radius: 7px; border-width: 2px;	border-color: #039d95;	
+	background-color: #1dccf0; color: white; padding-left: 3px; padding-right: 3px;
+}
+
+
 /* ---------------------------------
 2. COMMONS FOR PAGE DESIGN
 --------------------------------- */
