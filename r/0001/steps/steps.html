@@ -5,7 +5,6 @@
     <title>Passo a passo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../common-css/bootstrap.css">
 
     <style>
         body {
@@ -38,18 +37,18 @@
 </head>
 
 <script>
-function modeloAtual() {
-    return "criatividade0002.ldr";
-}
+    function modeloAtual() {
+        return "criatividade0001.ldr";
+    }
 </script>
-<script src="../../js/three.min.js"></script>
-<script src="../../js/prototype.js"></script>
-<script src="../../js/Detector.js"></script>
-<script src="../../js/brigl_materials.js"></script>
-<script src="../../js/brigl.js"></script>
-<script src="../../js/ctrlsteps.js"></script>
-<script src="steps/steps.js"></script>
-<script src="../../common-js/querystring.js"></script>
+<script src="/js/three.min.js"></script>
+<script src="/js/prototype.js"></script>
+<script src="/js/Detector.js"></script>
+<script src="/js/brigl_materials.js"></script>
+<script src="/js/brigl.js"></script>
+<script src="/js/ctrlsteps.js"></script>
+<script src="steps.js"></script>
+<script src="/common-js/querystring.js"></script>
 
 <script>
     var p = getQueryString("passo");
@@ -83,7 +82,7 @@ function modeloAtual() {
 
 <body onload="init();">
     <p id="logarea">Inicializando...</p>
-    <div id="stepsImage" style="position: relative; width:900px; height:700px; background-image:url('steps/Page 2.png');">
+    <div id="stepsImage" style="position: relative; width:900px; height:700px; background-image:url('Page 2.png');">
         <div id="container" 
             style="visibility: hidden; 
             float: right;
@@ -102,7 +101,6 @@ function modeloAtual() {
         </div>
     </div>
 </body>
-<script src="../../common-js/bootstrap.js"></script>
 
 <script>
     if (getQueryString("copy"))

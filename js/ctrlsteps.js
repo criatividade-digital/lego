@@ -152,7 +152,7 @@
                 //cont.camera.position.z (para o caso de ter alterado o zoom)
             }
             cont.render();
-            document.getElementById("stepsImage").style.backgroundImage = "url('steps/Page " + (step+1) + ".png')"; 
+            document.getElementById("stepsImage").style.backgroundImage = "url('Page " + (step+1) + ".png')"; 
             
 
         });
