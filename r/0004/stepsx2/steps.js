@@ -1,0 +1,4 @@
+var steps = [];
+/*01*/ steps.push({meshRotationX: -2.8600187255935015, meshRotationY: -0.6219607557276344, meshRotationZ: -0.005755618793305195, meshPositionX: 0, meshPositionY: 0, meshPositionZ: 0, cameraPositionX: 0, cameraPositionY: 357.19486931369363, cameraPositionZ: 952.5196515031831});
+/*02*/ steps.push({meshRotationX: -2.632939111051913, meshRotationY: 0.8218206572938931, meshRotationZ: 3.1245417745989226, meshPositionX: 0, meshPositionY: 0, meshPositionZ: 0, cameraPositionX: 0, cameraPositionY: 203.66382997630907, cameraPositionZ: 543.1035466034908});
+/*03*/ steps.push({meshRotationX: -2.632939111051913, meshRotationY: 0.8218206572938931, meshRotationZ: 3.1245417745989226, meshPositionX: 0, meshPositionY: 0, meshPositionZ: 0, cameraPositionX: 0, cameraPositionY: 203.66382997630907, cameraPositionZ: 543.1035466034908});
