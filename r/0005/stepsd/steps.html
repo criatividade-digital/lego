@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <title>Passo a passo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <style>
+        body {
+            background-color: #ccccff;
+            margin: 0px;
+            font-family: Monospace;
+            font-weight: bold;
+        }
+
+        #container {
+            background-color: #ffffff;
+            border: 1px solid black;
+            width: 800px;
+            height: 600px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+
+        #stepbox {
+            position: absolute;
+            bottom: 0;
+            right: 0
+        }
+        .barra-botoes {
+            position: absolute;
+            bottom: 10px;
+        }
+    </style>
+</head>
+
+<script>
+function modeloAtual() {
+    return "criatividade0005d.ldr";
+}
+</script>
+<script src="/js/three.min.js"></script>
+<script src="/js/prototype.js"></script>
+<script src="/js/Detector.js"></script>
+<script src="/js/brigl_materials.js"></script>
+<script src="/js/brigl.js"></script>
+<script src="/js/ctrlsteps.js"></script>
+<script src="steps.js"></script>
+<script src="/common-js/querystring.js"></script>
+
+<script>
+    var p = getQueryString("passo");
+    if (typeof p === "string")
+      passoInicial = parseInt(p, 10); 
+
+    function CopyToClipboard() {
+        var el = document.createElement('textarea');
+        el.value = "steps.push({" +
+            "meshRotationX: " + cont.mesh.rotation.x + ", " +
+            "meshRotationY: " + cont.mesh.rotation.y + ", " +
+            "meshRotationZ: " + cont.mesh.rotation.z + ", " +
+            "meshPositionX: " + cont.mesh.position.x + ", " +
+            "meshPositionY: " + cont.mesh.position.y + ", " +
+            "meshPositionZ: " + cont.mesh.position.z + ", " +
+            "cameraPositionX: " + cont.camera.position.x + ", " +
+            "cameraPositionY: " + cont.camera.position.y + ", " +
+            "cameraPositionZ: " + cont.camera.position.z + "});";
+        el.setAttribute('readonly', '');
+        el.style.position = 'absolute';
+        el.style.left = '-9999px';
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        alert("Copiado.");
+    }
+
+</script>
+    
+
+<body onload="init();">
+    <p id="logarea">Inicializando...</p>
+    <div id="stepsImage" style="position: relative; width:900px; height:700px; background-image:url('Page 2.png');">
+        <div id="container" 
+            style="visibility: hidden; 
+            float: right;
+            top: 10px; left: -10px;
+            width:400px; height:400px;
+            border-style: dotted;
+            position: relative;">
+        </div>
+        <div id="stepbox" class="barra-botoes">
+            <button type="button" class="btn-primary" onclick="dostep(-1);">&nbsp;<&nbsp;</button>
+            <button type="button" class="btn-primary" onclick="doAnimatedStep(-1);">&nbsp;a&nbsp;</button>
+            <span id="x">?/?</span>
+            <button type="button" class="btn-primary" onclick="doAnimatedStep(1);">&nbsp;a&nbsp;</button>
+            <button type="button" class="btn-primary" onclick="dostep(1);">&nbsp;>&nbsp;</button>
+            <button type="button" class="btn-primary" id="copy" onclick="CopyToClipboard()" style="visibility: hidden">C</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    if (getQueryString("copy"))
+        document.getElementById("copy").style.visibility = "visible";
+</script>
+</html>
