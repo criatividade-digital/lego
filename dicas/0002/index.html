@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Transferindo o programa para o HUB usando uma conexão Bluetooth</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Transferindo o programa para o HUB usando uma conexão Bluetooth.">
+    <meta name="author" content="CRIATIVIDADE.digital">    
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="../assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+						<div class="container-fluid position-relative py-2">
+							<div class="docs-logo-wrapper">
+								<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+								<div class="site-logo"><a class="navbar-brand" href="../index.html"><i class="far fa-lightbulb"></i><span
+											class="logo-text">&nbsp;&nbsp;Dicas<span class="text-alt"> CRIATIVIDADE.digital</span></span></a></div>
+							</div>
+							<!--//docs-logo-wrapper-->
+							<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+								<div class="top-search-box d-none d-lg-flex">
+									<!--<form class="search-form">
+										            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+										            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+										        </form>-->
+								</div>
+								<!--
+								<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+									<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+								</ul>
+								-->
+								<!--//social-list-->
+								<!--
+									<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-4-documentation-template-for-software-projects/"
+									class="btn btn-primary d-none d-lg-flex">Download</a>
+								-->
+							</div>
+							<!--//docs-top-utilities-->
+						</div>
+						<!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#Introducao"><span class="theme-icon-holder mr-2"><i class="fab fa-bluetooth-b"></i></span>Introdução</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#Transferindo-via-bluetooth"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Transferindo via Bluetooth</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#Modo-download">Modo download</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#Modo-transmissao">Modo transmissao</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="Introducao">
+						<header class="docs-header">
+							<h1 class="docs-heading">Introdução <span class="docs-time">Última atualização: 19/02/2020</span></h1>
+							<section class="docs-intro">
+								<p>Os programas podem ser transferidos do computador para o Spike Hub por meio de um cabo USB ou de uma conexão
+									Bluetooth.
+									Neste texto apresentamos <b>como transferir usando Bluetooth</b>.
+									Também apresentamos os dois tipos de tranferência disponíveis, ou seja, o modo <b>transmissão</b> e o modo
+									<b>download</b>.</p>
+							</section>
+							<!--//docs-intro-->
+						</header>
+			    </article>
+			    
+					<article class="docs-article" id="Transferindo-via-bluetooth">
+						<header class="docs-header">
+							<h1 class="docs-heading">Transferindo via Bluetooth<sup><i class="far fa-registered"></i></sup></h1>
+							<section class="docs-intro">
+							</section>
+							<!--//docs-intro-->
+						</header>
+						<section class="docs-section" id="Modo-download">
+							<h2 class="section-heading">Modo download</h2>
+							<p>O modo <b>download</b> é o modo padrão que permite salvar seus programas no Hub, desconectá-lo do dispositivo e
+								executá-lo sem a conexão com o computador.</p>
+							<p>Para baixar e executar seu programa imediatamente, pressione o botão <b>Play</b> no aplicativo.</p>
+							<figure class="figure docs-figure py-3">
+								<a href="play.png" data-title="Botão Play no Spike App" data-toggle="lightbox"><img
+										class="figure-img img-fluid shadow rounded" src="play.png" alt="" style="width: 300px;"></a>
+								<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>Botão Play no Spike App.</figcaption>
+							</figure>
+							<br />
+							<p>Para apenas baixar o programa no Hub utilize o botão <b>Download</b>. 
+							</p>
+							<figure class="figure docs-figure py-3">
+								<a href="download.png" data-title="Botão Donwload no Spike App" data-toggle="lightbox"><img
+										class="figure-img img-fluid shadow rounded" src="download.png" alt="" style="width: 300px;"></a>
+								<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2"></i>Botão Donwload no Spike App.</figcaption>
+							</figure>
+							<p>Veja no vídeo abaixo o processo de pareamento, conexão e transferência do programa ao Hub via Bluetooth. 
+								O vídeo apresenta as opções de transferência usando tanto o botão <b>Play</b> como o botão <b>download</b>.</p> 
+							<p>Ao final do vídeo você também poderá observar como usar as diferentes posições de armazenamento de programas no Hub.
+							  Existem 20 posições disponíveis. O vídeo mostra o uso das posições 0 e 1.</p>
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iFmtvvymd50" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="callout-block callout-block-info">
+								<div class="content">
+										<h4 class="callout-title">
+											<span class="callout-icon-holder mr-1">
+												<i class="fas fa-info-circle"></i>
+										</span><!--//icon-holder-->
+											Nota
+									</h4>
+										<p>O processo de <b>pareamento</b> apresentado no vídeo
+											(pressionar o botão <i class="fab fa-bluetooth-b"></i> no Hub),
+											só precisa ser executado uma única vez por computador.
+											Nas próximas conexões usando o mesmo computador, basta ligar o Hub e selecionar no Spike App a opção de 
+											conectar via Bluetooth.</p>
+								</div><!--//content-->
+						</div><!--//callout-block-->
+
+						
+						</section>
+						<!--//section-->
+					
+					<section class="docs-section" id="Modo-transmissao">
+							<h2 class="section-heading">Modo transmissão</h2>
+							<p>
+								O modo <b>transmissão</b> permite reproduzir programas em tempo real, permite reproduzir o programa e alterar os
+								parâmetros do programa enquanto ele está sendo executado. O modo <b>transmissão</b> é ótimo para testes, mas reage de
+								maneira muito diferente do modo <b>download</b>. O modo de <b>transmissão</b> tem um tempo de resposta um pouco mais
+								lento, lembre-se dessa diferença ao testar o seu programa.
+							</p>
+						</section>
+					<!--//section-->
+
+			    </article><!--//docs-article-->
+			    
+					<footer class="footer">
+						<div class="container text-center py-5">
+							<small class="copyright">Copyright &copy; CRIATIVIDADE.digital – Template by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
+							<ul class="social-list list-unstyled pt-4 mb-0">
+								<!--<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>-->
+								<li class="list-inline-item"><a href="https://www.facebook.com/ACriatividadeDigital/" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+								<!--<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>-->
+							</ul>
+							<!--//social-list-->
+						</div>
+					</footer>
+							</div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="../assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="../assets/plugins/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="../assets/js/highlight-custom.js"></script> 
+    <script src="../assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="../assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="../assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
