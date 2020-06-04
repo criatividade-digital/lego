@@ -110,7 +110,7 @@ LDR.Buttons.prototype.addTopButtonElements = function(actions, element, homeLink
     else {
 	this.homeButton.appendChild(LDR.SVG.makeUpAndBack());
     }
-    this.topButtons.appendChild(this.homeButton);
+    //@#@ this.topButtons.appendChild(this.homeButton);
 
     // Edit:
     if(options.canEdit) {
@@ -135,6 +135,7 @@ LDR.Buttons.prototype.addTopButtonElements = function(actions, element, homeLink
 }
 
 LDR.Buttons.prototype.hideElementsAccordingToOptions = function() {
+    LDR.Options.showCameraButtons = 2; //@#@
     if(LDR.Options.showCameraButtons == 2) {
 	this.zoomInButtonLarge.style.display = 'none';
 	this.zoomOutButtonLarge.style.display = 'none';
