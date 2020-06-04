@@ -49,7 +49,7 @@ LDR.Buttons = function(actions, element, addTopButtons, homeLink, mainImage, opt
             this.doneButton = this.createDiv('done_button', actions.clickDone);
             this.nextButtonLarge.append(LDR.SVG.makeRightArrowLarge());
             this.doneButton.append(LDR.SVG.makeCheckMark());
-            element.appendChild(this.nextButtonLarge);
+            //@#@element.appendChild(this.nextButtonLarge);
             element.appendChild(this.doneButton);
         }
     }
