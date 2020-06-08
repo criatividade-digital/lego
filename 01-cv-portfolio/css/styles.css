@@ -98,6 +98,9 @@ b.max-bold{ font-weight: 700; }
 	background-color: #1dccf0; color: white; padding-left: 3px; padding-right: 3px;
 }
 
+.b-motores { border-style: solid; border-radius: 7px; border-width: 2px;	border-color: #005fa0;	
+	background-color: #0090f5; color: white; padding-left: 3px; padding-right: 3px;
+}
 
 /* ---------------------------------
 2. COMMONS FOR PAGE DESIGN

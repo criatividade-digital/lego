@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Frear, Manter a posição e Flutuar</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Entenda a diferenças entre as opções de configuração da parada do motor do kit LEGO Spike.">
+    <meta name="author" content="CRIATIVIDADE.digital">    
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="../assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64612385-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-64612385-1');
+		</script>
+</head> 
+
+<body class="docs-page">
+	<div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0&appId=2385506498151963&autoLogAppEvents=1"></script>    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+						<div class="container-fluid position-relative py-2">
+							<div class="docs-logo-wrapper">
+								<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+								<div class="site-logo"><a class="navbar-brand" href="../index.html"><i class="far fa-lightbulb"></i><span
+											class="logo-text">&nbsp;&nbsp;Dicas<span class="text-alt"> CRIATIVIDADE.digital</span></span></a></div>
+							</div>
+							<!--//docs-logo-wrapper-->
+							<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+								<div class="top-search-box d-none d-lg-flex">
+									<!--<form class="search-form">
+										            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+										            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+										        </form>-->
+								</div>
+								<!--
+								<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+									<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+								</ul>
+								-->
+								<!--//social-list-->
+								<!--
+									<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-4-documentation-template-for-software-projects/"
+									class="btn btn-primary d-none d-lg-flex">Download</a>
+								-->
+							</div>
+							<!--//docs-top-utilities-->
+						</div>
+						<!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#Introducao"><span class="theme-icon-holder mr-2"><i class="fas fa-th-large"></i></span>Opções de parada</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#Frear">Frear</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#Flutuar">Flutuar</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#Manter">Manter a posição</a></li>
+
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="Introducao">
+						<header class="docs-header">
+							<h1 class="docs-heading">Opções de parada do motor<span class="docs-time">Última atualização: 08/06/2020</span></h1>
+							<section class="docs-intro">
+								<center>
+								<figure class="figure docs-figure py-3">
+									<a href="thumb.jpg" data-title="Comando: definir motores de movimento para" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="thumb.jpg" alt="" style="width: 600px;"></a>
+									<figcaption class="figure-caption mt-3"><i class="fas fa-info-circle mr-2">
+										</i>Bloco que permite definir como o LEGO Spike HUB vai acionar a parada do motor.</figcaption>
+								</figure>
+							  </center>
+								<p>A extensão MAIS MOTORES disponível no Spike App possui o bloco <spam class="b-motores">definir motores de movimento para [] na parada</spam>.
+									As opções disponíves para configuração são:
+									<ul>
+										<li><b>Frear</b></li>
+										<li><b>Manter a posição</b></li>
+										<li><b>Flutuar</b></li>
+									</ul>
+								</p>
+								<p>E agora? Qual a diferença entre elas? 🤔
+								</p>
+								<p>
+									Dá uma olhada no vídeo abaixo. E, antes de respondermos a questão, um desafio. 😉 Consegue identificar no vídeo cada um dos três tipos? O vídeo mostra a parada do motor em camera lenta para que você possa observar a diferença. 👇
+								</p>
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bWccvR3PAUk" frameborder="0"
+										allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<br />
+								<p>Então, conseguiu identificar? A ordem apresentada no vídeo foi a seguinte:
+									<ol>
+										<li>Manter a Posição</li>
+										<li>Flutuar</li>
+										<li>Frear</li>
+									</ol>
+								</p>
+								<p>A seguir, alguns esclarecimentos... 😊</p>
+							</section>
+						</header>
+						<section class="docs-section" id="Frear">
+							<h2 class="section-heading">Frear</h1>
+							<p>Nesta opção, o motor age ativamente para parar o seu movimento. Se você observar o vídeo acima (3) vai perceber na camera lenta que a parada é brusca. Isso até faz o prório motor balançar um pouco devido a inércia. No modo FREAR o que o motor faz é gerar um campo magnético buscando movimentar o motor na direção contária ajudando a parar o motor.
+							</p>
+						</section>
+						<section class="docs-section" id="Flutuar">
+							<h2 class="section-heading">Flutuar</h1>
+							<p>Nesta opção de parada a energia do motor é desligada ficando a cargo do próprio motor desligado parar a movimentação. Por isso ele é chamado de "Flutuar", pois, diferente do FREIAR não existe um força atuando além do próprio "freio motor". Na camera lenta do vídeo acima, é possível observar como a roda acaba parando de forma um pouco mais "suave". Mas, veja que isso não é muito perceptível, tivemos que capturar o vídeo com recurso da câmera lenta para poder mostrar essa diferença.
+							</p>
+						</section>
+						<section class="docs-section" id="Manter">
+							<h2 class="section-heading">Manter a posição</h1>
+							<p>Esta opção fica clara no vídeo quando tentamos movimentar a roda depois da parada. Nesta opção o motor é "travado" impedindo, enquanto o programa estiver sendo executado, que o motor mude de posição. Esta opção de travamento é útil quando usamos o motor para a movimentação de "garras". Desta forma, assim que a "garra" pega um objeto, o motor pode ser parado e travado na posição.
+							</p>
+						</section>
+						<section class="docs-section">
+							<p>Se tiver alguma dúvida ou quiser contribuir com este texto, deixe seu comentário abaixo.
+							</p>
+							<small>
+								<p>
+									Texto: <a href="https://www.linkedin.com/in/parau/" target="_blank">Parau Branco.</a>								
+								</p>
+							</small>
+							<div class="fb-comments" data-href="https://lego.criatividade.digital/dicas/0009/" data-numposts="20" data-width=""></div>
+						</section>
+					</article>
+					<footer class="footer">
+						<div class="container text-center py-5">
+							<small class="copyright">Copyright &copy; CRIATIVIDADE.digital – Template by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
+							<ul class="social-list list-unstyled pt-4 mb-0">
+								<!--<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>-->
+								<li class="list-inline-item"><a href="https://www.facebook.com/ACriatividadeDigital/" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+								<!--<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>-->
+							</ul>
+							<!--//social-list-->
+						</div>
+					</footer>
+				</div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+       
+    <!-- Javascript -->          
+    <script src="../assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="../assets/plugins/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="../assets/js/highlight-custom.js"></script> 
+    <script src="../assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="../assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="../assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
