@@ -286,6 +286,16 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 .education .alert-success .list > li:before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px; 
 	width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid green; }
 	
+
+	.education .list2 > li{ display: block; position: relative; margin-bottom: 10px; padding-left: 20px; }
+
+	.education .list2 > li:before{ content: ''; position: absolute; top: 10px; left: 0; height: 10px; 
+		width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #FFAB00; }
+
+	.education .list3 > li{ display: block; position: relative; margin-bottom: 10px; padding-left: 40px; }
+
+	.education .list3 > li:before{ content: ''; position: absolute; top: 10px; left: 20px; height: 10px; 
+			width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #15ff00; }
 	
 
 /* ---------------------------------
